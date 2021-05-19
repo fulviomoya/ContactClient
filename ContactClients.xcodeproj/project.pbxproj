@@ -141,7 +141,7 @@
 				D62CF83E2655A4750019B3DB /* Utils */,
 				D62CF83C2655A2CB0019B3DB /* Scenes */,
 				D62CF82B26558C500019B3DB /* DataAccess */,
-				D62CF819265579C60019B3DB /* Resources */,
+				D62CF8542655AEB10019B3DB /* Resources */,
 				D62CF7E1265560430019B3DB /* Info.plist */,
 			);
 			path = ContactClients;
@@ -176,30 +176,10 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		D62CF819265579C60019B3DB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D62CF7DC265560430019B3DB /* Assets.xcassets */,
-				D62CF81A26557AC30019B3DB /* Localizable.strings */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		D62CF82526558A2E0019B3DB /* DTOs */ = {
-			isa = PBXGroup;
-			children = (
-				D62CF82626558A760019B3DB /* ClientDTO.swift */,
-				D62CF82826558B880019B3DB /* AddressDTO.swift */,
-				D62CF83326558E3A0019B3DB /* MapperProtocol.swift */,
-			);
-			name = DTOs;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		D62CF82B26558C500019B3DB /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
-				D62CF82526558A2E0019B3DB /* DTOs */,
+				D62CF8532655AE850019B3DB /* DTOs */,
 				D62CF83026558DC50019B3DB /* Models */,
 				D62CF83526558F1F0019B3DB /* Repository */,
 				D62CF82C26558CB30019B3DB /* DataManager.swift */,
@@ -269,6 +249,25 @@
 				D62CF8502655A54F0019B3DB /* ContactDetailViewModel.swift */,
 			);
 			name = ContactDetails;
+			sourceTree = "<group>";
+		};
+		D62CF8532655AE850019B3DB /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF82626558A760019B3DB /* ClientDTO.swift */,
+				D62CF82826558B880019B3DB /* AddressDTO.swift */,
+				D62CF83326558E3A0019B3DB /* MapperProtocol.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		D62CF8542655AEB10019B3DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF7DC265560430019B3DB /* Assets.xcassets */,
+				D62CF81A26557AC30019B3DB /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
