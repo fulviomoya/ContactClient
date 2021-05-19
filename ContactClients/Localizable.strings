@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  ContactClients
+
+  Created by Fulvio A. Moya on 19/5/21.
+  
+*/
+
+// ContactListView
+"ContactListView.title" = "Listado de Clientes";
+
+
+// ContactDetailsView
+"ContactDetailsView.title" = "Mi perfil";
+"ContactDetailsView.loadError" = "Ha habido un problema al recuperar los datos del perfil";
+"ContactDetailsView.genre" = "Género";
+"ContactDetailsView.state" = "Estado civil";
+"ContactDetailsView.childs" = "Número de hijos";
+"ContactDetailsView.hello" = "Hola,";
+"ContactDetailsView.instructions" = "Haz tap sobre las opciones para modificarlas";
+"ContactDetailsView.genreLabel" = "Género";
+"ContactDetailsView.stateLabel" = "Estado civil";
+"ContactDetailsView.sonsLabel" = "Número de familiares";
+"ContactDetailsView.addressKey" = "Gestionar mis direcciones";
+"ContactDetailsView.passKey" = "Cambiar contraseña";
+"ContactDetailsView.save" = "Guardar cambios";
