@@ -141,7 +141,6 @@
 				D62CF83E2655A4750019B3DB /* Utils */,
 				D62CF83C2655A2CB0019B3DB /* Scenes */,
 				D62CF82B26558C500019B3DB /* DataAccess */,
-				D62CF82526558A2E0019B3DB /* DTOs */,
 				D62CF819265579C60019B3DB /* Resources */,
 				D62CF7E1265560430019B3DB /* Info.plist */,
 			);
@@ -194,11 +193,13 @@
 				D62CF83326558E3A0019B3DB /* MapperProtocol.swift */,
 			);
 			name = DTOs;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D62CF82B26558C500019B3DB /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
+				D62CF82526558A2E0019B3DB /* DTOs */,
 				D62CF83026558DC50019B3DB /* Models */,
 				D62CF83526558F1F0019B3DB /* Repository */,
 				D62CF82C26558CB30019B3DB /* DataManager.swift */,
