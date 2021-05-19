@@ -3,18 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D62CF7D4265560410019B3DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF7D3265560410019B3DB /* AppDelegate.swift */; };
 		D62CF7D6265560410019B3DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF7D5265560410019B3DB /* SceneDelegate.swift */; };
-		D62CF7D8265560410019B3DB /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF7D7265560410019B3DB /* ContactListViewController.swift */; };
 		D62CF7DD265560430019B3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62CF7DC265560430019B3DB /* Assets.xcassets */; };
 		D62CF7E0265560430019B3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62CF7DE265560430019B3DB /* LaunchScreen.storyboard */; };
 		D62CF7EB265560440019B3DB /* ContactClientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF7EA265560440019B3DB /* ContactClientsTests.swift */; };
 		D62CF7F6265560440019B3DB /* ContactClientsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF7F5265560440019B3DB /* ContactClientsUITests.swift */; };
-		D62CF806265561A90019B3DB /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF805265561A90019B3DB /* ContactDetailsViewController.swift */; };
+		D62CF80D26556B420019B3DB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D62CF80C26556B420019B3DB /* RealmSwift */; };
+		D62CF81B26557AC30019B3DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D62CF81A26557AC30019B3DB /* Localizable.strings */; };
+		D62CF82726558A760019B3DB /* ClientDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF82626558A760019B3DB /* ClientDTO.swift */; };
+		D62CF82926558B880019B3DB /* AddressDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF82826558B880019B3DB /* AddressDTO.swift */; };
+		D62CF82D26558CB30019B3DB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF82C26558CB30019B3DB /* DataManager.swift */; };
+		D62CF82F26558CF70019B3DB /* RealmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF82E26558CF70019B3DB /* RealmDataManager.swift */; };
+		D62CF83226558E000019B3DB /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF83126558E000019B3DB /* RealmProvider.swift */; };
+		D62CF83426558E3A0019B3DB /* MapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF83326558E3A0019B3DB /* MapperProtocol.swift */; };
+		D62CF83726558F990019B3DB /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF83626558F990019B3DB /* Client.swift */; };
+		D62CF8392655904D0019B3DB /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF8382655904D0019B3DB /* Address.swift */; };
+		D62CF83B265594810019B3DB /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF83A265594810019B3DB /* BaseRepository.swift */; };
+		D62CF8422655A4D00019B3DB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF83F2655A4D00019B3DB /* UIView+Extensions.swift */; };
+		D62CF8432655A4D00019B3DB /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF8402655A4D00019B3DB /* String+Extensions.swift */; };
+		D62CF8442655A4D00019B3DB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF8412655A4D00019B3DB /* UIColor+Extensions.swift */; };
+		D62CF8472655A4F00019B3DB /* NewContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF8452655A4F00019B3DB /* NewContactViewModel.swift */; };
+		D62CF8482655A4F00019B3DB /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF8462655A4F00019B3DB /* NewContactView.swift */; };
+		D62CF84B2655A5080019B3DB /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF8492655A5070019B3DB /* ContactListViewModel.swift */; };
+		D62CF84C2655A5080019B3DB /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF84A2655A5070019B3DB /* ContactListView.swift */; };
+		D62CF8512655A54F0019B3DB /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF84F2655A54F0019B3DB /* ContactDetailsView.swift */; };
+		D62CF8522655A54F0019B3DB /* ContactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF8502655A54F0019B3DB /* ContactDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +56,6 @@
 		D62CF7D0265560410019B3DB /* ContactClients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactClients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62CF7D3265560410019B3DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D62CF7D5265560410019B3DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D62CF7D7265560410019B3DB /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		D62CF7DC265560430019B3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D62CF7DF265560430019B3DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D62CF7E1265560430019B3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +65,25 @@
 		D62CF7F1265560440019B3DB /* ContactClientsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactClientsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62CF7F5265560440019B3DB /* ContactClientsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactClientsUITests.swift; sourceTree = "<group>"; };
 		D62CF7F7265560440019B3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D62CF805265561A90019B3DB /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		D62CF81A26557AC30019B3DB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D62CF82626558A760019B3DB /* ClientDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDTO.swift; sourceTree = "<group>"; };
+		D62CF82826558B880019B3DB /* AddressDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDTO.swift; sourceTree = "<group>"; };
+		D62CF82C26558CB30019B3DB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D62CF82E26558CF70019B3DB /* RealmDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataManager.swift; sourceTree = "<group>"; };
+		D62CF83126558E000019B3DB /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		D62CF83326558E3A0019B3DB /* MapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperProtocol.swift; sourceTree = "<group>"; };
+		D62CF83626558F990019B3DB /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		D62CF8382655904D0019B3DB /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		D62CF83A265594810019B3DB /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		D62CF83F2655A4D00019B3DB /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Utils/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D62CF8402655A4D00019B3DB /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Utils/String+Extensions.swift"; sourceTree = "<group>"; };
+		D62CF8412655A4D00019B3DB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "Utils/UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		D62CF8452655A4F00019B3DB /* NewContactViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewContactViewModel.swift; sourceTree = "<group>"; };
+		D62CF8462655A4F00019B3DB /* NewContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
+		D62CF8492655A5070019B3DB /* ContactListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactListViewModel.swift; path = ContactClients/Scenes/ContactListViewModel.swift; sourceTree = SOURCE_ROOT; };
+		D62CF84A2655A5070019B3DB /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactListView.swift; path = ContactClients/Scenes/ContactListView.swift; sourceTree = SOURCE_ROOT; };
+		D62CF84F2655A54F0019B3DB /* ContactDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
+		D62CF8502655A54F0019B3DB /* ContactDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D62CF80D26556B420019B3DB /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,9 +138,12 @@
 				D62CF7D3265560410019B3DB /* AppDelegate.swift */,
 				D62CF7D5265560410019B3DB /* SceneDelegate.swift */,
 				D62CF7DE265560430019B3DB /* LaunchScreen.storyboard */,
-				D62CF804265561900019B3DB /* ContactDetail */,
-				D62CF803265561800019B3DB /* ContactList */,
-				D62CF7DC265560430019B3DB /* Assets.xcassets */,
+				D62CF83E2655A4750019B3DB /* Utils */,
+				D62CF83C2655A2CB0019B3DB /* Scenes */,
+				D62CF82B26558C500019B3DB /* DataAccess */,
+				D62CF83026558DC50019B3DB /* Models */,
+				D62CF82526558A2E0019B3DB /* DTOs */,
+				D62CF819265579C60019B3DB /* Resources */,
 				D62CF7E1265560430019B3DB /* Info.plist */,
 			);
 			path = ContactClients;
@@ -128,20 +167,107 @@
 			path = ContactClientsUITests;
 			sourceTree = "<group>";
 		};
-		D62CF803265561800019B3DB /* ContactList */ = {
+		D62CF80F26556DF30019B3DB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D62CF7D7265560410019B3DB /* ContactListViewController.swift */,
+				D62CF8402655A4D00019B3DB /* String+Extensions.swift */,
+				D62CF8412655A4D00019B3DB /* UIColor+Extensions.swift */,
+				D62CF83F2655A4D00019B3DB /* UIView+Extensions.swift */,
+			);
+			name = Extensions;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D62CF819265579C60019B3DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF7DC265560430019B3DB /* Assets.xcassets */,
+				D62CF81A26557AC30019B3DB /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D62CF82526558A2E0019B3DB /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF82626558A760019B3DB /* ClientDTO.swift */,
+				D62CF82826558B880019B3DB /* AddressDTO.swift */,
+				D62CF83326558E3A0019B3DB /* MapperProtocol.swift */,
+			);
+			name = DTOs;
+			sourceTree = "<group>";
+		};
+		D62CF82B26558C500019B3DB /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF82C26558CB30019B3DB /* DataManager.swift */,
+				D62CF82E26558CF70019B3DB /* RealmDataManager.swift */,
+				D62CF83126558E000019B3DB /* RealmProvider.swift */,
+				D62CF83526558F1F0019B3DB /* Repository */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		D62CF83026558DC50019B3DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF83626558F990019B3DB /* Client.swift */,
+				D62CF8382655904D0019B3DB /* Address.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D62CF83526558F1F0019B3DB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF83A265594810019B3DB /* BaseRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D62CF83C2655A2CB0019B3DB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF84E2655A53C0019B3DB /* ContactDetails */,
+				D62CF84D2655A51B0019B3DB /* ContactList */,
+				D62CF83D2655A32D0019B3DB /* NewClient */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D62CF83D2655A32D0019B3DB /* NewClient */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF8462655A4F00019B3DB /* NewContactView.swift */,
+				D62CF8452655A4F00019B3DB /* NewContactViewModel.swift */,
+			);
+			name = NewClient;
+			sourceTree = "<group>";
+		};
+		D62CF83E2655A4750019B3DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF80F26556DF30019B3DB /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D62CF84D2655A51B0019B3DB /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				D62CF84A2655A5070019B3DB /* ContactListView.swift */,
+				D62CF8492655A5070019B3DB /* ContactListViewModel.swift */,
 			);
 			name = ContactList;
 			sourceTree = "<group>";
 		};
-		D62CF804265561900019B3DB /* ContactDetail */ = {
+		D62CF84E2655A53C0019B3DB /* ContactDetails */ = {
 			isa = PBXGroup;
 			children = (
-				D62CF805265561A90019B3DB /* ContactDetailsViewController.swift */,
+				D62CF84F2655A54F0019B3DB /* ContactDetailsView.swift */,
+				D62CF8502655A54F0019B3DB /* ContactDetailViewModel.swift */,
 			);
-			path = ContactDetail;
+			name = ContactDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +286,9 @@
 			dependencies = (
 			);
 			name = ContactClients;
+			packageProductDependencies = (
+				D62CF80C26556B420019B3DB /* RealmSwift */,
+			);
 			productName = ContactClients;
 			productReference = D62CF7D0265560410019B3DB /* ContactClients.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +360,9 @@
 				Base,
 			);
 			mainGroup = D62CF7C7265560410019B3DB;
+			packageReferences = (
+				D62CF80B26556B420019B3DB /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = D62CF7D1265560410019B3DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62CF7E0265560430019B3DB /* LaunchScreen.storyboard in Resources */,
+				D62CF81B26557AC30019B3DB /* Localizable.strings in Resources */,
 				D62CF7DD265560430019B3DB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,10 +406,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D62CF7D8265560410019B3DB /* ContactListViewController.swift in Sources */,
+				D62CF8422655A4D00019B3DB /* UIView+Extensions.swift in Sources */,
+				D62CF82926558B880019B3DB /* AddressDTO.swift in Sources */,
+				D62CF82D26558CB30019B3DB /* DataManager.swift in Sources */,
+				D62CF82726558A760019B3DB /* ClientDTO.swift in Sources */,
+				D62CF8392655904D0019B3DB /* Address.swift in Sources */,
 				D62CF7D4265560410019B3DB /* AppDelegate.swift in Sources */,
-				D62CF806265561A90019B3DB /* ContactDetailsViewController.swift in Sources */,
+				D62CF8472655A4F00019B3DB /* NewContactViewModel.swift in Sources */,
+				D62CF83726558F990019B3DB /* Client.swift in Sources */,
+				D62CF8432655A4D00019B3DB /* String+Extensions.swift in Sources */,
+				D62CF84B2655A5080019B3DB /* ContactListViewModel.swift in Sources */,
+				D62CF83426558E3A0019B3DB /* MapperProtocol.swift in Sources */,
+				D62CF83226558E000019B3DB /* RealmProvider.swift in Sources */,
+				D62CF8512655A54F0019B3DB /* ContactDetailsView.swift in Sources */,
+				D62CF8482655A4F00019B3DB /* NewContactView.swift in Sources */,
 				D62CF7D6265560410019B3DB /* SceneDelegate.swift in Sources */,
+				D62CF83B265594810019B3DB /* BaseRepository.swift in Sources */,
+				D62CF84C2655A5080019B3DB /* ContactListView.swift in Sources */,
+				D62CF8442655A4D00019B3DB /* UIColor+Extensions.swift in Sources */,
+				D62CF8522655A54F0019B3DB /* ContactDetailViewModel.swift in Sources */,
+				D62CF82F26558CF70019B3DB /* RealmDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +750,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D62CF80B26556B420019B3DB /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.7.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D62CF80C26556B420019B3DB /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D62CF80B26556B420019B3DB /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D62CF7C8265560410019B3DB /* Project object */;
 }
